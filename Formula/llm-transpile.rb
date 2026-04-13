@@ -1,16 +1,16 @@
 class LlmTranspile < Formula
   desc "Token-optimized document transpiler for LLM pipelines"
   homepage "https://github.com/epicsagas/llm-transpile"
-  version "0.1.0"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.1.0/transpile-aarch64-apple-darwin.tar.gz"
-      sha256 "92c6992c2a0a75bf11533eaca3c9088c87f693d1ee3d012469df3352d789381f"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.1.2/transpile-aarch64-apple-darwin.tar.gz"
+      sha256 "ddbb73d01c122f7d3c36bddc4bd53e41e68b873ca0c61bb44820b7d38757fff7"
     else
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.1.0/transpile-x86_64-apple-darwin.tar.gz"
-      sha256 "12c2fd5602945d6bae51fd572c6b83786fdcbc134815a7233977216f6ac6feb8"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.1.2/transpile-x86_64-apple-darwin.tar.gz"
+      sha256 "3c63d1d4520acfdc2394b023390691119cbb3b736fe2bf287deb50483c2fd2ee"
     end
   end
 
