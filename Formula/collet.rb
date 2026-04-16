@@ -7,10 +7,10 @@ class Collet < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/collet/releases/download/v0.1.0/collet-aarch64-apple-darwin.tar.gz"
-      sha256 "b5b8a5f4cbdc10d4381b16d8c7bb1fc6aefaa00e9145cee6a38d021f5f671d5d"
+      sha256 "c42159a69314c165f609f6314265dbab6cb2de61302d73e258161488f52b4b85"
     else
       url "https://github.com/epicsagas/collet/releases/download/v0.1.0/collet-x86_64-apple-darwin.tar.gz"
-      sha256 "e6ec39136788a104b32fade35177b80135c405cdc512d668c016ea91c875d0e0"
+      sha256 "f309c2b8ee11c8b2fb14560e384d3e8f222667e6c3d88509d6bf9fbe7bfe6287"
     end
   end
 
