@@ -7,7 +7,7 @@ class Alcove < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/alcove/releases/download/v0.7.11/alcove-aarch64-apple-darwin.tar.gz"
-      sha256 "232c47bf037415ae263ec1f623be3a35b6509f26d2cf255529a02a16bbe3ecbe"
+      sha256 "b315ea410327ce11ca0606f191e9d4cd39bfcdc3e59ca83babbf24ab3f928804"
     else
       url "https://github.com/epicsagas/alcove/releases/download/v0.7.11/alcove-x86_64-apple-darwin.tar.gz"
       sha256 "a5b62ee27c32ab8d5b9ea5bb09cda1bbd16a93e4f094fa22ea321bb4ec4eb9aa"
