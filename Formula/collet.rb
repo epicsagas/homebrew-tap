@@ -1,16 +1,16 @@
 class Collet < Formula
   desc "Relentless agentic coding orchestrator with zero-drop agent loops"
   homepage "https://github.com/epicsagas/collet"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/collet/releases/download/v0.1.0/collet-aarch64-apple-darwin.tar.gz"
-      sha256 "c42159a69314c165f609f6314265dbab6cb2de61302d73e258161488f52b4b85"
+      sha256 "b8a694291e984b278d1e7ae9be586d7b85884362d45b2c8ff5e038ac5a6181ce"
     else
       url "https://github.com/epicsagas/collet/releases/download/v0.1.0/collet-x86_64-apple-darwin.tar.gz"
-      sha256 "f309c2b8ee11c8b2fb14560e384d3e8f222667e6c3d88509d6bf9fbe7bfe6287"
+      sha256 "f77e815f2b7a9bb18253486cd6a7f1bed1eaf801b84947f23396d00b7248e964"
     end
   end
 
