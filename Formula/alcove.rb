@@ -1,13 +1,13 @@
 class Alcove < Formula
   desc "Private docs server with hybrid BM25 + semantic search for Claude Code"
   homepage "https://github.com/epicsagas/alcove"
-  version "0.7.11"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/alcove/releases/download/v0.7.11/alcove-aarch64-apple-darwin.tar.gz"
-      sha256 "28f4eaf37696109c5f1f84edc9e2b53ccba43d4cefdb463e20e13fea8a530fd1"
+      sha256 "b315ea410327ce11ca0606f191e9d4cd39bfcdc3e59ca83babbf24ab3f928804"
     else
       url "https://github.com/epicsagas/alcove/releases/download/v0.7.11/alcove-x86_64-apple-darwin.tar.gz"
       sha256 "a5b62ee27c32ab8d5b9ea5bb09cda1bbd16a93e4f094fa22ea321bb4ec4eb9aa"
