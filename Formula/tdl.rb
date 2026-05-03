@@ -1,26 +1,26 @@
 class Tdl < Formula
   desc "Tidal music downloader -- tracks, albums, playlists, mixes, and videos"
   homepage "https://github.com/epicsagas/tools"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.0/tdl_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6e8ed0d5e92f3a62ce123424312b5afdd2078928d8d10f36946469acd1e93aff"
+      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl_0.2.1_darwin_arm64.tar.gz"
+      sha256 "628b5872660cb0ff5ee1ae1cabeb37d1c1076ce7e5022a6e98bcfb6b7b51b105"
     else
-      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.0/tdl_0.2.0_darwin_amd64.tar.gz"
-      sha256 "3b5a73e2ff791997d9badcf94aa87d9ccfab095c299bf09b792c8ecf5c6c386b"
+      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl_0.2.1_darwin_amd64.tar.gz"
+      sha256 "f97988fce93875b5b962357c6cd7b6a77c5d1fd479efcd2651540aa2c5556108"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.0/tdl_0.2.0_linux_arm64.tar.gz"
-      sha256 "0da3864180a593b91765f24bdad6315ca0e655a3bc5c32a9809499c0c097dcd5"
+      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl_0.2.1_linux_arm64.tar.gz"
+      sha256 "82b660e88ea48423cd33dd8199a2e3e584c33ba305d35906ebd036af58336c8b"
     else
-      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.0/tdl_0.2.0_darwin_amd64.tar.gz"
-      sha256 "3b5a73e2ff791997d9badcf94aa87d9ccfab095c299bf09b792c8ecf5c6c386b"
+      url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl_0.2.1_linux_amd64.tar.gz"
+      sha256 "6884c975f0f415443d23f9514c8b56f7d0d64cc2a6cb5638225d193555333a41"
     end
   end
 
