@@ -7,20 +7,20 @@ class Claudy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl-aarch64-apple-darwin.tar.xz"
-      sha256 "5721462af72da82c7e82a0bd3d53536147e04cc87e5e4ab374e0a8f537f6b352"
+      sha256 "02c692f4cf7a2b6c52a44f50f81d9792314470a333de72947c187abfae776c17"
     else
       url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl-x86_64-apple-darwin.tar.xz"
-      sha256 "535628fef3be6462304f70727caa69ad08a31fb70090097b4e11b6ff3105ea34"
+      sha256 "e721937d35be0813680973e5dea773b9c739a954dbdbe437cb78abfd91acdbba"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "50ee66b3dc01f9fc983305003b06935c91f3a6a7c8d5b173c3d207d86e238733"
+      sha256 "0ea374bdb4c6bef7ad47832a685bbfe1746343b6d9f0930b307b04ce8c59c339"
     else
       url "https://github.com/epicsagas/tools/releases/download/tdl-v0.2.1/tdl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b15305e2413ca7ad54c5ca10217c49dc73994f353ebef9b9a251d20b644740bf"
+      sha256 "00a822040c2d7ae1549f11c30077ffc28202b44f14b3523d744bbb9bcb6e9a9d"
     end
   end
 
