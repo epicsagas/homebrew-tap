@@ -1,16 +1,16 @@
 class EpicHarness < Formula
   desc "Self-evolving Claude Code harness — 6 commands, auto skills"
   homepage "https://github.com/epicsagas/epic-harness"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/epic-harness/releases/download/v0.3.0/epic-harness-aarch64-apple-darwin.tar.gz"
-      sha256 "2ec157efa3e9809793690e31b41a47dfb3af50da93be2dfe7a45c9fbe39ed617"
+      url "https://github.com/epicsagas/epic-harness/releases/download/v0.3.1/epic-harness-aarch64-apple-darwin.tar.gz"
+      sha256 "546644206053de0177b382a28c583561fd6ae071b0a5613ee0074d681b23865a"
     else
-      url "https://github.com/epicsagas/epic-harness/releases/download/v0.3.0/epic-harness-x86_64-apple-darwin.tar.gz"
-      sha256 "25e52a4022c527e67946ac0f057856892d25585f1bcb532a8520d8b3faa380c5"
+      url "https://github.com/epicsagas/epic-harness/releases/download/v0.3.1/epic-harness-x86_64-apple-darwin.tar.gz"
+      sha256 "fe7219d1c4d988bdc006e0da85578f1a10ffbdd8d51e83df4bf683a649d6e833"
     end
   end
 
