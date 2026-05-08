@@ -7,20 +7,20 @@ class Claudy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/claudy/releases/download/claudy-v0.2.0/claudy-aarch64-apple-darwin.tar.xz"
-      sha256 "98e1f4e4923c1c62709d4a6c43bec8a81ac2d90e068876b068ca727e5b5681ac"
+      sha256 "342cc2af3852d8a69a970f3fb8d1bedb5adc9643d8a50bc537e5df1695863341"
     else
       url "https://github.com/epicsagas/claudy/releases/download/claudy-v0.2.0/claudy-x86_64-apple-darwin.tar.xz"
-      sha256 "65a36a1ce983da2c58e897c685134e876b6308c86c69e64b40c66a4df94f0842"
+      sha256 "150e37befde45d57983aeaeeb40a06e4bb625229996a143301d285e060f37491"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/claudy/releases/download/claudy-v0.2.0/claudy-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7c3075ed6d9be9a420aca4a9c2b4d446194f5bbde1d8ad3b321a400284853a68"
+      sha256 "1c253afba6d02326b2420d83e6b1963fd59761aa50f4a45eaa3e2fc18996ab69"
     else
       url "https://github.com/epicsagas/claudy/releases/download/claudy-v0.2.0/claudy-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3ca843746913d4d1c531b6c1d2faf17ce696f93083ecc401464dc04fae11eb17"
+      sha256 "28424e103426dfe392fee83a031d3a82886b7c28a721b6d306a2a5977e239e94"
     end
   end
 
