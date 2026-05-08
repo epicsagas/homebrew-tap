@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Ruby compiled files
+*.rbc
+
+# Editor directories
+.idea/
+.vscode/
+
+# Vim swap files
+*.swp
+*.swo
+
+# Backup files
+*~

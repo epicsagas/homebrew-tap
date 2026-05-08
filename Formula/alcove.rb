@@ -5,12 +5,12 @@ class Alcove < Formula
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.7.11/alcove-aarch64-apple-darwin.tar.gz"
+    on_arm do
+      url "https://github.com/epicsagas/alcove/releases/download/v0.8.5/alcove-aarch64-apple-darwin.tar.gz"
       sha256 "8953087da6f60a1ca1c66dbad84fc443f67bdda7cb789854d45e6e96ea078208"
-    else
-      url "https://github.com/epicsagas/alcove/releases/download/v0.7.11/alcove-x86_64-apple-darwin.tar.gz"
-      sha256 "a5b62ee27c32ab8d5b9ea5bb09cda1bbd16a93e4f094fa22ea321bb4ec4eb9aa"
+    end
+    on_intel do
+      odie "alcove v0.8.5+ no longer provides Intel macOS binaries. Use an ARM Mac or build from source."
     end
   end
 
