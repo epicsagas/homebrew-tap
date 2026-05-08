@@ -1,26 +1,26 @@
 class Tdl < Formula
   desc "Tidal music downloader with TUI and GUI"
   homepage "https://github.com/epicsagas/tdl"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/tdl/releases/download/v0.1.0/tdl-aarch64-apple-darwin.tar.xz"
-      sha256 "7e22b0f7697c39c2c97d15c8dbc0e50074a7c1c33575cc4c1e98bfa5228edb54"
+      url "https://github.com/epicsagas/tdl/releases/download/v0.1.1/tdl-aarch64-apple-darwin.tar.xz"
+      sha256 "1a1c0b20973ccac15216fed2a2c286aad3f702f9f0327869aac385f35486f3fc"
     else
-      url "https://github.com/epicsagas/tdl/releases/download/v0.1.0/tdl-x86_64-apple-darwin.tar.xz"
-      sha256 "fffbefb8b28f13ca418fd5050d43a7ca14b6c9a687cd0ffeca7410ee1b09769d"
+      url "https://github.com/epicsagas/tdl/releases/download/v0.1.1/tdl-x86_64-apple-darwin.tar.xz"
+      sha256 "624f87d4b30e0086358f2cd68ccbe84d57a742c7fe6c1b00f1ab92f56a570c9b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/tdl/releases/download/v0.1.0/tdl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ad0698b89d88ff21b643b253ebb605eaa36429382d9b89e1930e37f63e8ad318"
+      url "https://github.com/epicsagas/tdl/releases/download/v0.1.1/tdl-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "41bb482b0f9515b2c009cf47a751640f4b709369738b1cdbb1714b3cf5018a31"
     else
-      url "https://github.com/epicsagas/tdl/releases/download/v0.1.0/tdl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "21d1ac0232bb34169fcde4d4a5df18f674966e27c5a7b3fcecac184faac14b39"
+      url "https://github.com/epicsagas/tdl/releases/download/v0.1.1/tdl-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0d0b2c503bfad65d40485f66467484fd7f373d9df2f8a2da0823b79ce1775f81"
     end
   end
 
