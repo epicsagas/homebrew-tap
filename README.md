@@ -7,7 +7,6 @@ Homebrew formulae for developer productivity tools
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/epicsagas/homebrew-tap?style=flat&logo=github)](https://github.com/epicsagas/homebrew-tap/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/epicsagas/homebrew-tap?style=flat&logo=github)](https://github.com/epicsagas/homebrew-tap/forks)
-[![GitHub downloads](https://img.shields.io/github/downloads/epicsagas/homebrew-tap/total?style=flat&logo=github)](https://github.com/epicsagas/homebrew-tap/releases)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
 </div>
