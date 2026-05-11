@@ -17,6 +17,7 @@ class ObsidianForge < Formula
 
   def install
     bin.install "obsidian-forge"
+    bin.install_symlink "obsidian-forge" => "of"
   end
 
   test do

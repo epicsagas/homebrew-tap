@@ -16,6 +16,7 @@ class EpicHarness < Formula
 
   def install
     bin.install "epic-harness"
+    bin.install_symlink "epic-harness" => "epic"
   end
 
   test do
