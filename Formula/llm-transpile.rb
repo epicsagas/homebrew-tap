@@ -5,21 +5,21 @@ class LlmTranspile < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/llm-transpile/releases/download/v0.2.1/llm-transpile-aarch64-apple-darwin.tar.xz"
-      sha256 "003031ab49aeb253d46d9cf004e2dac06ffcba1777557919aeb9001cc99e54c7"
+      sha256 "6c1a2417e932c16a97f83bebd74c7b20792fc25f12c378a2a6e3bedb99bd9dc3"
     end
     if Hardware::CPU.intel?
       url "https://github.com/epicsagas/llm-transpile/releases/download/v0.2.1/llm-transpile-x86_64-apple-darwin.tar.xz"
-      sha256 "128ff90dd9628da6b25ccd8f97f6a760e486e7b016366ef3a7836beb05833434"
+      sha256 "59e62b2d880226d989f956efc3374ce1673516f2345cb6789d0e8919a630d872"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/llm-transpile/releases/download/v0.2.1/llm-transpile-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8d577e672bec702b546dd2f1b5a44cfbe8af92abbb54a829b7c1514a92fab102"
+      sha256 "edf57fa05ba7f43408f71c2ace10bd718e284fea15f3e9edf1e778d87515cb5b"
     end
     if Hardware::CPU.intel?
       url "https://github.com/epicsagas/llm-transpile/releases/download/v0.2.1/llm-transpile-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "133cb97b591f72022abc916aff666bc2f2c7b8dfaeced56f792bb809d3fde149"
+      sha256 "890d2c712aafcd2e36c190b05b6a37841c6b4668ba1d99ef00dd1a3dff0ef28c"
     end
   end
   license "Apache-2.0"
