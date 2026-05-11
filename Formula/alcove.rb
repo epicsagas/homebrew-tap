@@ -6,7 +6,7 @@ class Alcove < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/epicsagas/alcove/releases/download/v0.8.5/alcove-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.8.6/alcove-aarch64-apple-darwin.tar.gz"
       sha256 "beb0a32f539433d646e77d952750c2e7318dd11100f681daa19db1f64afd68fb"
     end
     on_intel do
