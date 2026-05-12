@@ -1,25 +1,25 @@
 class ObsidianForge < Formula
   desc "Obsidian vault generator, automation daemon, and graph strengthener"
   homepage "https://github.com/epicsagas/obsidian-forge"
-  version "0.1.8"
+  version "0.1.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.8/obsidian-forge-aarch64-apple-darwin.tar.xz"
-      sha256 "44efc41e1cddc91f9111f295ba24d65afb89947f928fd8d8983a29a59674f5d4"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.9/obsidian-forge-aarch64-apple-darwin.tar.xz"
+      sha256 "4d75ce511c8648ff0a8e2301f25344c577065ad6c7de3a7bbad9f02ad55d94fe"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.8/obsidian-forge-x86_64-apple-darwin.tar.xz"
-      sha256 "684af5295a0c271f6f633fada69e4b949160cd46c163f82c7dc6a25e78bf2a97"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.9/obsidian-forge-x86_64-apple-darwin.tar.xz"
+      sha256 "54d00aae648eff40e2cdb4a4acf1b018823cbe58ffd63bc5c66516779c1efe8b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.8/obsidian-forge-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "dfaf2643a7a00d05af702e8b199a5a01e89bc58360c8ee34bf027c556db6b54d"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.9/obsidian-forge-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "4cf8608b1c31f89f0dc32c2020feb0b678609db9fe12c310c9eb56ab61684871"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.8/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4a7f9712ab527eed1f6ddf4f6f868a516d2759272bc2ae623124d83ea00cc4f3"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.1.9/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "10d9e2a4932de8f2ee109cabef2775dffca50125f58b7725f945e24c8e95a0f8"
     end
   end
   license "Apache-2.0"
