@@ -25,7 +25,7 @@ class ObscuraPlugin < Formula
   end
 
   def install
-    bin.install "obscura-mcp"
+    bin.install "obscura-plugin"
   end
 
   test do
