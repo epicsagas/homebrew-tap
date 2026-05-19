@@ -29,7 +29,7 @@ brew install <formula>
 | collet | Relentless agentic coding orchestrator with zero-drop agent loops | [epicsagas/collet](https://github.com/epicsagas/collet) |
 | epic-harness | Self-evolving Claude Code harness -- 6 commands, auto skills | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
 | llm-transpile | Token-optimized document transpiler for LLM pipelines | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
-| obscura-mcp | MCP server for Obscura headless browser — fetch, scrape, extract markdown | [epicsagas/obscura-plugin](https://github.com/epicsagas/obscura-plugin) |
+| obscura-plugin | MCP server for Obscura headless browser — fetch, scrape, extract markdown | [epicsagas/obscura-plugin](https://github.com/epicsagas/obscura-plugin) |
 | tdl | Tidal music downloader with TUI and GUI | [epicsagas/tdl](https://github.com/epicsagas/tdl) |
 
 ## Install Examples
@@ -51,7 +51,7 @@ brew install epicsagas/tap/epic-harness
 brew install epicsagas/tap/llm-transpile
 
 # Headless browser MCP server for AI agents
-brew install epicsagas/tap/obscura-mcp
+brew install epicsagas/tap/obscura-plugin
 
 # Tidal music downloader
 brew install epicsagas/tap/tdl
