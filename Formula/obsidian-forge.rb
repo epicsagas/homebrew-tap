@@ -1,33 +1,31 @@
 class ObsidianForge < Formula
   desc "Obsidian vault generator, automation daemon, and graph strengthener"
   homepage "https://github.com/epicsagas/obsidian-forge"
-  version "0.2.3"
+  version "0.2.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.3/obsidian-forge-aarch64-apple-darwin.tar.xz"
-      sha256 "254fef7f99159136849cf02afa5f9d1adc60e43760a3e1d747eb2290b8163f92"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.4/obsidian-forge-aarch64-apple-darwin.tar.xz"
+      sha256 "08f2e14cf47b78b5cb97616334eed8b493e491a7ed01012d53c01be749601ddc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.3/obsidian-forge-x86_64-apple-darwin.tar.xz"
-      sha256 "bd45e65ba137409d3625248b6fd214b08b5fcfc556a74c1d45500530995bed1b"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.4/obsidian-forge-x86_64-apple-darwin.tar.xz"
+      sha256 "398feb5b1b00ff60f2d66a68f4b9deedb2d5b292c61953fbaf40fd3e95390b06"
     end
   end
-  if OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.3/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9cd99a5d6b75010c8b8164c29b04bf26c0791db05331409ccee52ddec9e72393"
-    end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.4/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "74fe2cdd870cdf5e289c53d2085ceca9542a84f64d4651b5481a3a594091b3a9"
   end
   license "Apache-2.0"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {},
+    "aarch64-apple-darwin":              {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
+    "x86_64-unknown-linux-gnu":          {},
     "x86_64-unknown-linux-musl-dynamic": {},
-    "x86_64-unknown-linux-musl-static": {}
-  }
+    "x86_64-unknown-linux-musl-static":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
@@ -45,15 +43,9 @@ class ObsidianForge < Formula
   end
 
   def install
-    if OS.mac? && Hardware::CPU.arm?
-      bin.install "obsidian-forge", "of"
-    end
-    if OS.mac? && Hardware::CPU.intel?
-      bin.install "obsidian-forge", "of"
-    end
-    if OS.linux? && Hardware::CPU.intel?
-      bin.install "obsidian-forge", "of"
-    end
+    bin.install "obsidian-forge", "of" if OS.mac? && Hardware::CPU.arm?
+    bin.install "obsidian-forge", "of" if OS.mac? && Hardware::CPU.intel?
+    bin.install "obsidian-forge", "of" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
