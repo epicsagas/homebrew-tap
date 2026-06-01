@@ -4,11 +4,11 @@ class Episteme < Formula
   version "0.2.3"
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/epicsagas/Episteme/releases/download/v0.2.3/episteme-aarch64-apple-darwin.tar.xz"
-    sha256 "3c1a8d88e9cd44795e00883b58340e01b6a9efb785294b9533d5db20b07accb3"
+    sha256 "6ebc75090c4f15cb0e2789b3b1644c7a974283b83c201e8e99dd84c283df131b"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/epicsagas/Episteme/releases/download/v0.2.3/episteme-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "fdabcc9794fb78c1a3762eb7490174bad66539bcef75a1fde868d7190aa4985b"
+    sha256 "6a6122cc992dff4e85cd1bd0f310b9a15fe069246105575623a239bc09f8ecfd"
   end
   license "Apache-2.0"
 
