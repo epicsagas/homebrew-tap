@@ -1,25 +1,25 @@
 class Alcove < Formula
   desc "A quiet place for your project docs. MCP server that gives AI agents scoped access to private documentation."
   homepage "https://github.com/epicsagas/alcove"
-  version "0.11.4"
+  version "0.11.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.4/alcove-aarch64-apple-darwin.tar.xz"
-      sha256 "7d63779a802eddb0d692433749becdc63ef30d15e13655ec557d839488820bcc"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.11.5/alcove-aarch64-apple-darwin.tar.xz"
+      sha256 "d4bf784aa29a94993ddd23e374856aa0cd2310d807dae302e333a1f95aea40f0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.4/alcove-x86_64-apple-darwin.tar.xz"
-      sha256 "69cdae446efcb53b9eec091519f66dff54baa8d1546484c7bb65f7b87dba5237"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.11.5/alcove-x86_64-apple-darwin.tar.xz"
+      sha256 "e82463850a699732606cda2bfafcc3ed552ad825875743a533cfc2b6c1f48796"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.4/alcove-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "31d2590a6d330053470523caa3582aedc26892574930d52da4037023d3f37c7a"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.11.5/alcove-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7a37c1ec6d64e7be7b18cd7a54644f5989633c74626de1cb80e7dd0c10b982e8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.4/alcove-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ccecd800059265127ec6409de752e6208915fc24c8c40315400366ff4890b177"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.11.5/alcove-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0b31c36d9305479fbe106ae02fb813a69d233b1c9b361909f540957919a69246"
     end
   end
   license "Apache-2.0"
