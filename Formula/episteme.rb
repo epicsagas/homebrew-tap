@@ -1,14 +1,14 @@
 class Episteme < Formula
   desc "Knowledge graph for software engineering — design patterns, refactorings, and laws for AI agents"
   homepage "https://github.com/epicsagas/Episteme"
-  version "0.3.1"
+  version "0.3.2"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.1/episteme-aarch64-apple-darwin.tar.xz"
-    sha256 "73c4f392c81e7b7db0d2305337bb80dc217d2a1ce78d76bbdb87a882c1d98431"
+    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.2/episteme-aarch64-apple-darwin.tar.xz"
+    sha256 "fe0c33e6defa5e88ab344d0699eb51f1f4c184b90fb92f79cae3a0153631804c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.1/episteme-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "4b8bdeb1e166cf5533487865f56a561a2fbe0d414d19bd887a32256c194c0c4d"
+    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.2/episteme-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "f0391fcba546b81427d855fda322d3104bf22ec5a466b9191f236e19ce70eccb"
   end
   license "Apache-2.0"
 
