@@ -1,25 +1,19 @@
 class Alcove < Formula
   desc "A quiet place for your project docs. MCP server that gives AI agents scoped access to private documentation."
   homepage "https://github.com/epicsagas/alcove"
-  version "0.11.6"
-  if OS.mac?
-    if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.6/alcove-aarch64-apple-darwin.tar.xz"
-      sha256 "ff3992644b1c8825c21647fef201a088d5125940902901b2eabd2767574bd956"
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.6/alcove-x86_64-apple-darwin.tar.xz"
-      sha256 "aeb5b62d6264c3a74f2089d32f61b7d3804e3d96150f2218d0ffa0e31951b60b"
-    end
+  version "0.11.7"
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/epicsagas/alcove/releases/download/v0.11.7/alcove-aarch64-apple-darwin.tar.xz"
+    sha256 "a3d3da932709bb5e1f93c73266fcdcb7adba4495dce8955990f7cdba656707ca"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.6/alcove-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f8bf293d0bbe8217fa8c6cab51022bfaab6c4851ad5390ab75703e12a5a7d914"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.11.7/alcove-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c954e1ff6d9a34e241b6ffe088ec00bb20ca3aacee1a9f6c05c1e1ce0e12a4ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/alcove/releases/download/v0.11.6/alcove-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "46d6b12870eb9c5f7f0ac253d99b0ad4012fba2ed9ed1a7fb7fd6f613bf48391"
+      url "https://github.com/epicsagas/alcove/releases/download/v0.11.7/alcove-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7d0e50085991930b95d3fc08cbf56ca1f58d7c90619a20fe09811df2be4e8759"
     end
   end
   license "Apache-2.0"
@@ -27,7 +21,6 @@ class Alcove < Formula
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
     "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
@@ -49,7 +42,6 @@ class Alcove < Formula
 
   def install
     bin.install "alcove" if OS.mac? && Hardware::CPU.arm?
-    bin.install "alcove" if OS.mac? && Hardware::CPU.intel?
     bin.install "alcove" if OS.linux? && Hardware::CPU.arm?
     bin.install "alcove" if OS.linux? && Hardware::CPU.intel?
 
