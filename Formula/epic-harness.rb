@@ -1,16 +1,16 @@
 class EpicHarness < Formula
   desc "Self-evolving Claude Code harness — 8 commands, auto skills"
   homepage "https://github.com/epicsagas/epic-harness"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/epic-harness/releases/download/v0.5.0/epic-harness-aarch64-apple-darwin.tar.xz"
-      sha256 "c085f226e823b5992d9b54b5666e58d162b40e845ae5faee24a26e37771465e8"
+      url "https://github.com/epicsagas/epic-harness/releases/download/v0.5.1/epic-harness-aarch64-apple-darwin.tar.xz"
+      sha256 "f5c9347fe81c8c99ce793794ce6cb61921226181dc5e4768ab681e9e0badbb80"
     else
-      url "https://github.com/epicsagas/epic-harness/releases/download/v0.5.0/epic-harness-x86_64-apple-darwin.tar.xz"
-      sha256 "3345cffb83d1230beb0dec3e9ee7a08061831a3a9bbb051c6d1202dece76a459"
+      url "https://github.com/epicsagas/epic-harness/releases/download/v0.5.1/epic-harness-x86_64-apple-darwin.tar.xz"
+      sha256 "d41c55f7d650d1c7a40fb9d8ee52119da4420fe11bc279c1690a97d91e9bde4d"
     end
   end
 
@@ -20,6 +20,6 @@ class EpicHarness < Formula
   end
 
   test do
-    assert_match "epic-harness", shell_output("#{bin}/epic-harness version 2>&1")
+    assert_match "epic-harness", shell_output("#{bin}/epic version 2>&1")
   end
 end
