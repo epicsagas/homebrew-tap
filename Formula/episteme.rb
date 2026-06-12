@@ -1,19 +1,19 @@
 class Episteme < Formula
   desc "Knowledge graph for software engineering — design patterns, refactorings, and laws for AI agents"
   homepage "https://github.com/epicsagas/Episteme"
-  version "0.3.8"
+  version "0.3.9"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.8/episteme-aarch64-apple-darwin.tar.xz"
-    sha256 "1b3db9ff7d559ec8d8d2081181c7b303a52159fba7674c8845ccfde594e1b48c"
+    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.9/episteme-aarch64-apple-darwin.tar.xz"
+    sha256 "5a433d5adbb7e2eba2904d60db03cb5dd04446e37ca86d35cd2ade69e57b7d4a"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.8/episteme-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b55aa801865ba8040b6b5b47c0233e605cd1e81c057e584fbb19695e1fe7f7b4"
+      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.9/episteme-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c243b5314662f7558b2bf173a98a71c12e5b1e75315b23a74b182c4b82dcfee8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.8/episteme-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "98e0fd8aa365afc0c35d05c6f5b9686a3dad66bde59faf6216d63bac2b097459"
+      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.9/episteme-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0ee746c3565fd632e08108e0de2dbbdca4711c7428b1fdd92e17e04dba49b8d5"
     end
   end
   license "Apache-2.0"
