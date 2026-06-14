@@ -1,20 +1,20 @@
 class ObsidianForge < Formula
   desc "Obsidian vault generator, automation daemon, and graph strengthener"
   homepage "https://github.com/epicsagas/obsidian-forge"
-  version "0.2.6"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.6/obsidian-forge-aarch64-apple-darwin.tar.xz"
-      sha256 "81c79810f4b9597bd82cb34262171555256a24ef7289e09b160d56b800e31f53"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.3.0/obsidian-forge-aarch64-apple-darwin.tar.xz"
+      sha256 "0eed9fa9bff1b03c8ee7f3d3e595a19d399d9fb95ad99573bb978fee3176247d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.6/obsidian-forge-x86_64-apple-darwin.tar.xz"
-      sha256 "6a7fe609df65b06df73cd9c09b4e278b0f1a2d6b7ef8827e28ab8204522e44ff"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.3.0/obsidian-forge-x86_64-apple-darwin.tar.xz"
+      sha256 "5d729c25f6e68222e93b64a07b9eb310e3e3684aa2064caaec73503ee8c75b9e"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.2.6/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "23cb059018c9709d33b5c93a57fbb7f63fd66048b9b4da783992ebcc4bc0cb0c"
+    url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.3.0/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "d020bbd16e7d124894bc56bbb59741bf64a8f8399ea1180eeacb3cd23f42c7aa"
   end
   license "Apache-2.0"
 
