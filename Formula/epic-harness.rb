@@ -7,10 +7,10 @@ class EpicHarness < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/epicsagas/epic-harness/releases/download/v0.8.1/epic-harness-aarch64-apple-darwin.tar.xz"
-      sha256 "62650835d0f669059d7f952b6899bf367b909007504969393a4599ed8dda6a5d"
+      sha256 "3d2099aa8e433cc9b405112f7f7089b81198aee746264cc7178546ba61e91620"
     else
       url "https://github.com/epicsagas/epic-harness/releases/download/v0.8.1/epic-harness-x86_64-apple-darwin.tar.xz"
-      sha256 "3488d97b1523345e284f2ec06a286378ab127d13134324499f36241d14150898"
+      sha256 "28184e68de51d0b79162c193dade3f11e7b00e9489852f0c8318ab18243ababb"
     end
   end
 
