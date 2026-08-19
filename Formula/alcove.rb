@@ -1,14 +1,14 @@
 class Alcove < Formula
   desc "A quiet place for your project docs. MCP server that gives AI agents scoped access to private documentation."
   homepage "https://github.com/epicsagas/alcove"
-  version "0.12.6"
+  version "0.13.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/epicsagas/alcove/releases/download/v0.12.6/alcove-aarch64-apple-darwin.tar.xz"
-    sha256 "191541b3e5430d97816036d8bf4963caf6fdcf3a65c7051eed239caa286ed765"
+    url "https://github.com/epicsagas/alcove/releases/download/v0.13.0/alcove-aarch64-apple-darwin.tar.xz"
+    sha256 "c9b30f6386d0abc0007b52a729576d74b32f0a56c0719147cfd9c065597bb8fe"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/epicsagas/alcove/releases/download/v0.12.6/alcove-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "71b3c03a395ce33e97fadacfd89cfb6c33848080f8fb9d01edea6504bfeec165"
+    url "https://github.com/epicsagas/alcove/releases/download/v0.13.0/alcove-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "282dc0a492d4c82a91514cdb771228a1e4f465448f6e77b4e320313d41deaf18"
   end
   license "Apache-2.0"
 
@@ -33,8 +33,12 @@ class Alcove < Formula
   end
 
   def install
-    bin.install "alcove" if OS.mac? && Hardware::CPU.arm?
-    bin.install "alcove" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "alcove"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "alcove"
+    end
 
     install_binary_aliases!
 
