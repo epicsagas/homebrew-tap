@@ -15,13 +15,8 @@ class Claudy < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/claudy/releases/download/v0.9.2/claudy-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 ""
-    else
       url "https://github.com/epicsagas/claudy/releases/download/v0.9.2/claudy-x86_64-unknown-linux-gnu.tar.xz"
       sha256 "7f72e818115d9063bb47a53d9c3e5e0a97f8bb5828075a0e57a78c56aa3d528b"
-    end
   end
 
   def install
