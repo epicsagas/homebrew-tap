@@ -1,19 +1,19 @@
 class Episteme < Formula
   desc "Knowledge graph for software engineering — design patterns, refactorings, and laws for AI agents"
   homepage "https://github.com/epicsagas/Episteme"
-  version "0.3.9"
+  version "0.3.11"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.9/episteme-aarch64-apple-darwin.tar.xz"
-    sha256 "5a433d5adbb7e2eba2904d60db03cb5dd04446e37ca86d35cd2ade69e57b7d4a"
+    url "https://github.com/epicsagas/Episteme/releases/download/v0.3.11/episteme-aarch64-apple-darwin.tar.xz"
+    sha256 "086d1dd00fe0bedd8b42af7aa761db9cf83fe59e250dfafdd6c5bfd104c9be29"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.9/episteme-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c243b5314662f7558b2bf173a98a71c12e5b1e75315b23a74b182c4b82dcfee8"
+      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.11/episteme-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "688889db436ac5e924f9c72d636160382d086a9fb330966764946b7af647b9ed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.9/episteme-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0ee746c3565fd632e08108e0de2dbbdca4711c7428b1fdd92e17e04dba49b8d5"
+      url "https://github.com/epicsagas/Episteme/releases/download/v0.3.11/episteme-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "249deb9a830a2f6cfdb38ed982f90b8e947da624032358ff2d3caa4953bf1997"
     end
   end
   license "Apache-2.0"
@@ -41,9 +41,15 @@ class Episteme < Formula
   end
 
   def install
-    bin.install "epis", "episteme" if OS.mac? && Hardware::CPU.arm?
-    bin.install "epis", "episteme" if OS.linux? && Hardware::CPU.arm?
-    bin.install "epis", "episteme" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "epis", "episteme"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "epis", "episteme"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "epis", "episteme"
+    end
 
     install_binary_aliases!
 
