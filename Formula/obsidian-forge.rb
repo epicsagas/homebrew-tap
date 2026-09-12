@@ -1,20 +1,20 @@
 class ObsidianForge < Formula
   desc "Obsidian vault generator, automation daemon, and graph strengthener"
   homepage "https://github.com/epicsagas/obsidian-forge"
-  version "0.3.2"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.3.2/obsidian-forge-aarch64-apple-darwin.tar.xz"
-      sha256 "6a6950db2685de47074ee167831f5b59dda6b44d929b6d526fafb892c00d32b3"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.4.0/obsidian-forge-aarch64-apple-darwin.tar.xz"
+      sha256 "bca3719f15f49cd807a7331e6886e24f50ac04b57d20b090c260f099d61bf0a0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.3.2/obsidian-forge-x86_64-apple-darwin.tar.xz"
-      sha256 "95c03d4c57c8cab8ea97cd31e4c65b549071f4e0b7f0bcc1665754585b14c455"
+      url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.4.0/obsidian-forge-x86_64-apple-darwin.tar.xz"
+      sha256 "288c6e602f67f7873de7f4dc609d48b889037e3b9504b68260c298ed040c07ec"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.3.2/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "481b951402bebeba9090d4691f58ecc9fe8b18fddfd2f6b027c6487d0ebfabbc"
+    url "https://github.com/epicsagas/obsidian-forge/releases/download/v0.4.0/obsidian-forge-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "0c1f0d57f96485023a376d3c10b0215123dc6119e79593a1231862ce023ca24b"
   end
   license "Apache-2.0"
 
@@ -43,9 +43,15 @@ class ObsidianForge < Formula
   end
 
   def install
-    bin.install "obsidian-forge", "of" if OS.mac? && Hardware::CPU.arm?
-    bin.install "obsidian-forge", "of" if OS.mac? && Hardware::CPU.intel?
-    bin.install "obsidian-forge", "of" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "obsidian-forge", "of"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "obsidian-forge", "of"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "obsidian-forge", "of"
+    end
 
     install_binary_aliases!
 
