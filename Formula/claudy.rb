@@ -1,22 +1,22 @@
 class Claudy < Formula
   desc "Modern multi-provider launcher for Claude CLI"
   homepage "https://github.com/epicsagas/claudy"
-  version "0.9.2"
+  version "0.9.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/claudy/releases/download/v0.9.2/claudy-aarch64-apple-darwin.tar.xz"
-      sha256 "cef9c8075c3f9a4dfd801616b16fe454763174f7b885db3d378467e355a50dcd"
+      url "https://github.com/epicsagas/claudy/releases/download/v0.9.3/claudy-aarch64-apple-darwin.tar.xz"
+      sha256 "07e4edbb8661c21a62583d94c681edf589ea7cbfeac81870bd2e96e70f563503"
     else
-      url "https://github.com/epicsagas/claudy/releases/download/v0.9.2/claudy-x86_64-apple-darwin.tar.xz"
-      sha256 "086c62bc37ffd8ef85f757fb01a24b9c41eafba5e9e91fcd9660b458838a4dc4"
+      url "https://github.com/epicsagas/claudy/releases/download/v0.9.3/claudy-x86_64-apple-darwin.tar.xz"
+      sha256 "8aaed8c44f1650d16b5d29c87d35ac5e516abf1477a77ed763fe495a6a5557c1"
     end
   end
 
   on_linux do
-      url "https://github.com/epicsagas/claudy/releases/download/v0.9.2/claudy-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7f72e818115d9063bb47a53d9c3e5e0a97f8bb5828075a0e57a78c56aa3d528b"
+    url "https://github.com/epicsagas/claudy/releases/download/v0.9.3/claudy-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "40cf1c71529386abb131c476035a1a9f9356e746e6400a2aeb86fdb0f02248b2"
   end
 
   def install
