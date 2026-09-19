@@ -1,25 +1,25 @@
 class ResearchAgent < Formula
   desc "Long-term research assistant: index papers, articles, and PDFs"
   homepage "https://github.com/epicsagas/research-agent"
-  version "0.2.5"
+  version "0.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-aarch64-apple-darwin.tar.xz"
-      sha256 "e7d8b485500e32ea9f76807b2ac8abe5b8f265f087cd3fdce9c595057c0ba166"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-aarch64-apple-darwin.tar.xz"
+      sha256 "5f722c9625f2b4bec948d2e6ef830e6906c14486e3987e2a62f654d54971a80b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-x86_64-apple-darwin.tar.xz"
-      sha256 "0638e1f324e5285df90b680c25c23acfc4b3ba3557a84630658ebbf6238dcbbb"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-x86_64-apple-darwin.tar.xz"
+      sha256 "c5e42f4ba9c1d5cf82d8ca8c3eba939a89cc78ea4dbf0991175247806f461187"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5f4e19ec195ec0cffb8ae493f8e4143d8cf18136ef94f6db599bbb89d16987c1"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4b435969a6c795e1b005dc0d322d64fd73e78bdbcbe5420038f52c4a1e89e3a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "72b42191b28c9c98eb7891d18fa6c5f4cf2b24b1005fb75f7c0b6ac4ce5e9838"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "60e7ea30421de3d95e3c5b4f50956d363a417ee52bb0f1939229151bde47d9c1"
     end
   end
   license "Apache-2.0"
