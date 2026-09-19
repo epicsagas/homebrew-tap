@@ -1,25 +1,25 @@
 class ResearchAgent < Formula
   desc "Long-term research assistant: index papers, articles, and PDFs"
   homepage "https://github.com/epicsagas/research-agent"
-  version "0.2.4"
+  version "0.2.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.4/research-agent-aarch64-apple-darwin.tar.xz"
-      sha256 "e35d2718a0fc835cadf51cdc3dd7c2ad4c25c55c19de3eefeac8e60e1259865e"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-aarch64-apple-darwin.tar.xz"
+      sha256 "e7d8b485500e32ea9f76807b2ac8abe5b8f265f087cd3fdce9c595057c0ba166"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.4/research-agent-x86_64-apple-darwin.tar.xz"
-      sha256 "3c7bc9cf36de66f3c26de4da40d2d4e7cd467de0585654e3e8744779c55090b7"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-x86_64-apple-darwin.tar.xz"
+      sha256 "0638e1f324e5285df90b680c25c23acfc4b3ba3557a84630658ebbf6238dcbbb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.4/research-agent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "dfaefce0e5a47a3b4c7ba054313850218bdd779b4f30d6ed3800f3dd3240ab51"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5f4e19ec195ec0cffb8ae493f8e4143d8cf18136ef94f6db599bbb89d16987c1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.4/research-agent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b8eae476d5fce4ebe53ed21464d07e48fe1699e82bc5446755e0b27637612f6b"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.5/research-agent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "72b42191b28c9c98eb7891d18fa6c5f4cf2b24b1005fb75f7c0b6ac4ce5e9838"
     end
   end
   license "Apache-2.0"
