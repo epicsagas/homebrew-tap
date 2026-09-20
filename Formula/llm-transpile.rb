@@ -1,25 +1,25 @@
 class LlmTranspile < Formula
   desc "High-performance LLM context bridge — token-optimized document transpiler"
   homepage "https://github.com/epicsagas/llm-transpile"
-  version "0.4.4"
+  version "0.4.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-aarch64-apple-darwin.tar.xz"
-      sha256 "8d1216ddebe0e35b4896188725b11e8904542251daa39e4f51eea0abd1c08b14"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.5/llm-transpile-aarch64-apple-darwin.tar.xz"
+      sha256 "08c735ff5ab6b4c29bf2beff6068ebcf623c3b49fb651f2cfc1c9b816a462bab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-x86_64-apple-darwin.tar.xz"
-      sha256 "802eef600391514a6c366175dedd7daef6d9a54b345c7e4280c0f891fcf08d14"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.5/llm-transpile-x86_64-apple-darwin.tar.xz"
+      sha256 "be23c5e7f2ea91d7b8a65ed3fe6c6ee482985c030aeca84d4752241caed04ae2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "09a59ce2082c1dd54168cc56906d0b04c5bbd098277ce8885c9b2bc986f0aa51"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.5/llm-transpile-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a6f444d239dd44c474c4bb8b94a37fa4f570b2a3dec86e4abe92b057d6eea57e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b3f8b417d51ef9a6ea90144dc1d04765c474bd0229fb681f3ff480476567e83d"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.5/llm-transpile-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "adefd631f455dc8b0948bfa9d413003c56b1bcbbde7c822c0dc8a317b0dadece"
     end
   end
   license "Apache-2.0"
