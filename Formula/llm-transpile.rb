@@ -1,25 +1,25 @@
 class LlmTranspile < Formula
   desc "High-performance LLM context bridge — token-optimized document transpiler"
   homepage "https://github.com/epicsagas/llm-transpile"
-  version "0.4.1"
+  version "0.4.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.1/llm-transpile-aarch64-apple-darwin.tar.xz"
-      sha256 "688570c3fbcabb67c43b0a4ffdb5c926528280255cb19864982bf40f2ab68178"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-aarch64-apple-darwin.tar.xz"
+      sha256 "8d1216ddebe0e35b4896188725b11e8904542251daa39e4f51eea0abd1c08b14"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.1/llm-transpile-x86_64-apple-darwin.tar.xz"
-      sha256 "5ecdffc834d9c138dadc3abd48fdc1ae977cf2dd9b2ffab4d7fa226cc5de1ef9"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-x86_64-apple-darwin.tar.xz"
+      sha256 "802eef600391514a6c366175dedd7daef6d9a54b345c7e4280c0f891fcf08d14"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.1/llm-transpile-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f76e2e442db5ee742f65118c06731a53a8a3dfc0a03afc569b6586b7bfce7336"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "09a59ce2082c1dd54168cc56906d0b04c5bbd098277ce8885c9b2bc986f0aa51"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.1/llm-transpile-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6323c0a6335e52c6f3a6cc42f61457f47ca0a9d920e7cc50b986c1cd3c71a4fe"
+      url "https://github.com/epicsagas/llm-transpile/releases/download/v0.4.4/llm-transpile-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b3f8b417d51ef9a6ea90144dc1d04765c474bd0229fb681f3ff480476567e83d"
     end
   end
   license "Apache-2.0"
@@ -50,10 +50,18 @@ class LlmTranspile < Formula
   end
 
   def install
-    bin.install "transpile" if OS.mac? && Hardware::CPU.arm?
-    bin.install "transpile" if OS.mac? && Hardware::CPU.intel?
-    bin.install "transpile" if OS.linux? && Hardware::CPU.arm?
-    bin.install "transpile" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "transpile"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "transpile"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "transpile"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "transpile"
+    end
 
     install_binary_aliases!
 
