@@ -5,7 +5,7 @@
 Homebrew formulae for developer productivity tools
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-3fb950?style=for-the-badge&labelColor=0d1117)](LICENSE)
-[![Formulae](https://img.shields.io/badge/formulae-7-58a6ff?style=for-the-badge&labelColor=0d1117&logo=homebrew&logoColor=white)](Formula/)
+[![Formulae](https://img.shields.io/badge/formulae-12-58a6ff?style=for-the-badge&labelColor=0d1117&logo=homebrew&logoColor=white)](Formula/)
 [![Stars](https://img.shields.io/github/stars/epicsagas/homebrew-tap?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white)](https://github.com/epicsagas/homebrew-tap/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&labelColor=0d1117&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
@@ -27,9 +27,13 @@ brew install <formula>
 | alcove | Private docs server with hybrid BM25 + semantic search for Claude Code | [epicsagas/alcove](https://github.com/epicsagas/alcove) |
 | claudy | Modern multi-provider launcher for Claude CLI | [epicsagas/claudy](https://github.com/epicsagas/claudy) |
 | collet | Relentless agentic coding orchestrator with zero-drop agent loops | [epicsagas/collet](https://github.com/epicsagas/collet) |
-| epic-harness | Self-evolving Claude Code harness -- 6 commands, auto skills | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
+| epic-harness | Self-evolving Claude Code harness -- 8 commands, auto skills | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
+| epiccounty | Install and manage the epiccounty ecosystem | [epiccounty.com](https://epiccounty.com) |
+| episteme | Knowledge graph for software engineering: design patterns, refactorings, and laws for AI agents | [epicsagas/Episteme](https://github.com/epicsagas/Episteme) |
 | llm-transpile | Token-optimized document transpiler for LLM pipelines | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
 | obscura-plugin | MCP server for Obscura headless browser — fetch, scrape, extract markdown | [epicsagas/obscura-plugin](https://github.com/epicsagas/obscura-plugin) |
+| obsidian-forge | Obsidian vault generator, automation daemon, and graph strengthener | [epicsagas/obsidian-forge](https://github.com/epicsagas/obsidian-forge) |
+| research-agent | Long-term research assistant: index papers, articles, and PDFs | [epicsagas/research-agent](https://github.com/epicsagas/research-agent) |
 | tdl | Tidal music downloader with TUI and GUI | [epicsagas/tdl](https://github.com/epicsagas/tdl) |
 
 ## Install Examples
@@ -47,14 +51,40 @@ brew install epicsagas/tap/collet
 # Self-evolving Claude Code harness
 brew install epicsagas/tap/epic-harness
 
+# epiccounty ecosystem manager
+brew install epicsagas/tap/epiccounty
+
+# Software engineering knowledge graph for AI agents
+brew install epicsagas/tap/episteme
+
 # Document transpiler for LLM pipelines
 brew install epicsagas/tap/llm-transpile
 
 # Headless browser MCP server for AI agents
 brew install epicsagas/tap/obscura-plugin
 
+# Obsidian vault generator and automation daemon
+brew install epicsagas/tap/obsidian-forge
+
+# Long-term research assistant
+brew install epicsagas/tap/research-agent
+
 # Tidal music downloader
 brew install epicsagas/tap/tdl
+```
+
+## Aliases
+
+Short names that resolve to a full formula:
+
+| Alias | Formula |
+|-------|---------|
+| `epic` | epic-harness |
+| `of` | obsidian-forge |
+| `transpile` | llm-transpile |
+
+```bash
+brew install epicsagas/tap/of   # same as epicsagas/tap/obsidian-forge
 ```
 
 ## Uninstall
