@@ -1,25 +1,25 @@
 class ResearchAgent < Formula
   desc "Long-term research assistant: index papers, articles, and PDFs"
   homepage "https://github.com/epicsagas/research-agent"
-  version "0.2.6"
+  version "0.2.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-aarch64-apple-darwin.tar.xz"
-      sha256 "5f722c9625f2b4bec948d2e6ef830e6906c14486e3987e2a62f654d54971a80b"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.7/research-agent-aarch64-apple-darwin.tar.xz"
+      sha256 "546eb77021dde03b1abefeac3f415055947dfd885d20519db97ae069bb51a765"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-x86_64-apple-darwin.tar.xz"
-      sha256 "c5e42f4ba9c1d5cf82d8ca8c3eba939a89cc78ea4dbf0991175247806f461187"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.7/research-agent-x86_64-apple-darwin.tar.xz"
+      sha256 "6e63445b5a22f1ad2f71bb9b67cdd9a79b62ce87f96fafc4c481b9f1e6a54983"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4b435969a6c795e1b005dc0d322d64fd73e78bdbcbe5420038f52c4a1e89e3a3"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.7/research-agent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f3dbb276fc1be4155d2b6071bdd78d3688bab7ae14956728bf13a35548b4140a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.6/research-agent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "60e7ea30421de3d95e3c5b4f50956d363a417ee52bb0f1939229151bde47d9c1"
+      url "https://github.com/epicsagas/research-agent/releases/download/v0.2.7/research-agent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e6fa22791b2c79b5424941aeec31f803f9ca82544c3ed34f21bd6657cf610dcc"
     end
   end
   license "Apache-2.0"
