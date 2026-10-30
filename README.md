@@ -5,7 +5,7 @@
 Homebrew formulae for developer productivity tools
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-3fb950?style=for-the-badge&labelColor=0d1117)](LICENSE)
-[![Formulae](https://img.shields.io/badge/formulae-12-58a6ff?style=for-the-badge&labelColor=0d1117&logo=homebrew&logoColor=white)](Formula/)
+[![Formulae](https://img.shields.io/badge/formulae-11-58a6ff?style=for-the-badge&labelColor=0d1117&logo=homebrew&logoColor=white)](Formula/)
 [![Stars](https://img.shields.io/github/stars/epicsagas/homebrew-tap?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white)](https://github.com/epicsagas/homebrew-tap/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&labelColor=0d1117&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
