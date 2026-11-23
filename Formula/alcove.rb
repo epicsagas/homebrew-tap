@@ -1,14 +1,14 @@
 class Alcove < Formula
   desc "A quiet place for your project docs. MCP server that gives AI agents scoped access to private documentation."
   homepage "https://github.com/epicsagas/alcove"
-  version "0.14.8"
+  version "0.14.9"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/epicsagas/alcove/releases/download/v0.14.8/alcove-aarch64-apple-darwin.tar.xz"
-    sha256 "2b4c4df6a375f7b56431dfccdb42ccf379054c2d7aeece00a056faab79666a99"
+    url "https://github.com/epicsagas/alcove/releases/download/v0.14.9/alcove-aarch64-apple-darwin.tar.xz"
+    sha256 "462d936250088e1c342b9cbf2035184ff374b2548c6fb153c103d9ffa6734111"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/epicsagas/alcove/releases/download/v0.14.8/alcove-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "ffa3be623db4a73b4cbaf4d5195a3ed00b334321138f78955c58ce10597e8590"
+    url "https://github.com/epicsagas/alcove/releases/download/v0.14.9/alcove-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "0df98a808b070aecf27a3a8cf84282b8311894c962a90cfe4abbb695ee7a7812"
   end
   license "Apache-2.0"
 
